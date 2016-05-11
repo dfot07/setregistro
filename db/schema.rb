@@ -11,7 +11,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160508220653) do
+ActiveRecord::Schema.define(version: 20160511030914) do
+
+  create_table "sellers", force: :cascade do |t|
+    t.string   "lastnameseller"
+    t.string   "nameseller"
+    t.string   "lastnamebuyer"
+    t.string   "namebuyer"
+    t.string   "inscription"
+    t.string   "yearinscription"
+    t.integer  "user_id"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+  end
+
+  add_index "sellers", ["user_id"], name: "index_sellers_on_user_id"
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false

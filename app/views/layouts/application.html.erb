@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Registro de la Propiedad | Sistema de Solicitud de Entrada y Trámite</title>
+  <title>Registro de la Propiedad | Sistema Ingreso Índice de Vendedores y Compradores</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-	 <p class="notice"><%= notice %></p>
-     <p class="alert"><%= alert %></p>
+	<div style="<%= "display:none;" if alert.nil? && notice.nil? %>">
+		<p class="notice"><%= notice %></p>
+    	<p class="alert"><%= alert %></p>
+	</div>
 
 <%= yield %>
 

@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  lastnameseller: MyString
+  nameseller: MyString
+  documentseller: MyString
+  lastnamebuyer: MyString
+  namebuyer: MyString
+  documentbuyer: MyString
+  inscription: MyString
+  yearinscription: MyString
+  user_id: 
+
+two:
+  lastnameseller: MyString
+  nameseller: MyString
+  documentseller: MyString
+  lastnamebuyer: MyString
+  namebuyer: MyString
+  documentbuyer: MyString
+  inscription: MyString
+  yearinscription: MyString
+  user_id: 

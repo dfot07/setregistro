@@ -1,0 +1,8 @@
+= form_for @seller, builder: BootstrapFormBuilder do |f|
+  = f.text_field :lastnameseller, placeholder: "Apellidos del Vendedor"
+  = f.text_field :nameseller, placeholder: "Nombres del Vendedor"
+  = f.text_field :lastnamebuyer, placeholder: "Apellidos del Comprador"
+  = f.text_field :namebuyer, placeholder: "Nombres del Comprador"
+  = f.text_field :inscription, placeholder: "N{umero de Inscripción"
+  = f.text_field :yearinscription, placeholder: "Año de Inscripción"
+  = f.submit "Enviar"
